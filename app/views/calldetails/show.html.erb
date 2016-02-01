@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Globalcallid callid:</strong>
+  <%= @calldetail.globalCallID_callId %>
+</p>
+
+<p>
+  <strong>Cdrrecordtype:</strong>
+  <%= @calldetail.cdrRecordType %>
+</p>
+
+<p>
+  <strong>Origipaddr:</strong>
+  <%= @calldetail.origIpAddr %>
+</p>
+
+<p>
+  <strong>Callingpartynumber:</strong>
+  <%= @calldetail.callingPartyNumber %>
+</p>
+
+<p>
+  <strong>Destipaddr:</strong>
+  <%= @calldetail.destIpAddr %>
+</p>
+
+<p>
+  <strong>Originalcalledpartynumber:</strong>
+  <%= @calldetail.originalCalledPartyNumber %>
+</p>
+
+<p>
+  <strong>Datetimeconnect:</strong>
+  <%= @calldetail.dateTimeConnect %>
+</p>
+
+<p>
+  <strong>Datetimedisconnect:</strong>
+  <%= @calldetail.dateTimeDisconnect %>
+</p>
+
+<p>
+  <strong>Originalcalledpartynumberpartition:</strong>
+  <%= @calldetail.originalCalledPartyNumberPartition %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @calldetail.duration %>
+</p>
+
+<p>
+  <strong>Origdevicename:</strong>
+  <%= @calldetail.origDeviceName %>
+</p>
+
+<p>
+  <strong>Destdevicename:</strong>
+  <%= @calldetail.destDeviceName %>
+</p>
+
+<%= link_to 'Edit', edit_calldetail_path(@calldetail) %> |
+<%= link_to 'Back', calldetails_path %>

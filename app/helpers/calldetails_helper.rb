@@ -1,0 +1,2 @@
+module CalldetailsHelper
+end

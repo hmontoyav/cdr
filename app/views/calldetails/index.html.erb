@@ -1,0 +1,49 @@
+<h1>Listing calldetails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Globalcallid callid</th>
+      <th>Cdrrecordtype</th>
+      <th>Origipaddr</th>
+      <th>Callingpartynumber</th>
+      <th>Destipaddr</th>
+      <th>Originalcalledpartynumber</th>
+      <th>Datetimeconnect</th>
+      <th>Datetimedisconnect</th>
+      <th>Originalcalledpartynumberpartition</th>
+      <th>Duration</th>
+      <th>Origdevicename</th>
+      <th>Destdevicename</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calldetails.each do |calldetail| %>
+      <tr>
+        <td><%= calldetail.globalCallID_callId %></td>
+        <td><%= calldetail.cdrRecordType %></td>
+        <td><%= calldetail.origIpAddr %></td>
+        <td><%= calldetail.callingPartyNumber %></td>
+        <td><%= calldetail.destIpAddr %></td>
+        <td><%= calldetail.originalCalledPartyNumber %></td>
+        <td><%= calldetail.dateTimeConnect %></td>
+        <td><%= calldetail.dateTimeDisconnect %></td>
+        <td><%= calldetail.originalCalledPartyNumberPartition %></td>
+        <td><%= calldetail.duration %></td>
+        <td><%= calldetail.origDeviceName %></td>
+        <td><%= calldetail.destDeviceName %></td>
+        <td><%= link_to 'Show', calldetail %></td>
+        <td><%= link_to 'Edit', edit_calldetail_path(calldetail) %></td>
+        <td><%= link_to 'Destroy', calldetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calldetail', new_calldetail_path %>

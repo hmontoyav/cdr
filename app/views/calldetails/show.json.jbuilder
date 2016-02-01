@@ -1,0 +1,1 @@
+json.extract! @calldetail, :id, :globalCallID_callId, :cdrRecordType, :origIpAddr, :callingPartyNumber, :destIpAddr, :originalCalledPartyNumber, :dateTimeConnect, :dateTimeDisconnect, :originalCalledPartyNumberPartition, :duration, :origDeviceName, :destDeviceName, :created_at, :updated_at

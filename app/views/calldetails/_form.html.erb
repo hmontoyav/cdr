@@ -1,0 +1,65 @@
+<%= form_for(@calldetail) do |f| %>
+  <% if @calldetail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@calldetail.errors.count, "error") %> prohibited this calldetail from being saved:</h2>
+
+      <ul>
+      <% @calldetail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :globalCallID_callId %><br>
+    <%= f.number_field :globalCallID_callId %>
+  </div>
+  <div class="field">
+    <%= f.label :cdrRecordType %><br>
+    <%= f.number_field :cdrRecordType %>
+  </div>
+  <div class="field">
+    <%= f.label :origIpAddr %><br>
+    <%= f.number_field :origIpAddr %>
+  </div>
+  <div class="field">
+    <%= f.label :callingPartyNumber %><br>
+    <%= f.text_field :callingPartyNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :destIpAddr %><br>
+    <%= f.number_field :destIpAddr %>
+  </div>
+  <div class="field">
+    <%= f.label :originalCalledPartyNumber %><br>
+    <%= f.text_field :originalCalledPartyNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :dateTimeConnect %><br>
+    <%= f.number_field :dateTimeConnect %>
+  </div>
+  <div class="field">
+    <%= f.label :dateTimeDisconnect %><br>
+    <%= f.number_field :dateTimeDisconnect %>
+  </div>
+  <div class="field">
+    <%= f.label :originalCalledPartyNumberPartition %><br>
+    <%= f.text_field :originalCalledPartyNumberPartition %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.number_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :origDeviceName %><br>
+    <%= f.text_field :origDeviceName %>
+  </div>
+  <div class="field">
+    <%= f.label :destDeviceName %><br>
+    <%= f.text_field :destDeviceName %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
