@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  globalCallID_callId: 1
+  cdrRecordType: 1
+  origIpAddr: 1
+  callingPartyNumber: MyString
+  destIpAddr: 1
+  originalCalledPartyNumber: MyString
+  dateTimeConnect: 1
+  dateTimeDisconnect: 1
+  originalCalledPartyNumberPartition: MyString
+  duration: 1
+  origDeviceName: MyString
+  destDeviceName: MyString
+
+two:
+  globalCallID_callId: 1
+  cdrRecordType: 1
+  origIpAddr: 1
+  callingPartyNumber: MyString
+  destIpAddr: 1
+  originalCalledPartyNumber: MyString
+  dateTimeConnect: 1
+  dateTimeDisconnect: 1
+  originalCalledPartyNumberPartition: MyString
+  duration: 1
+  origDeviceName: MyString
+  destDeviceName: MyString
