@@ -36,9 +36,9 @@
         <td><%= calldetail.duration %></td>
         <td><%= calldetail.origDeviceName %></td>
         <td><%= calldetail.destDeviceName %></td>
-        <td><%= link_to 'Show', calldetail %></td>
-        <td><%= link_to 'Edit', edit_calldetail_path(calldetail) %></td>
-        <td><%= link_to 'Destroy', calldetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', calldetail, class:"btn btn-link" %></td>
+        <td><%= link_to 'Edit', edit_calldetail_path(calldetail), class:"btn btn-link" %></td>
+        <td><%= link_to 'Destroy', calldetail, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-link" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -46,4 +46,4 @@
 
 <br>
 
-<%= link_to 'New Calldetail', new_calldetail_path %>
+<%= link_to 'New Calldetail', new_calldetail_path, class:"btn btn-link" %>

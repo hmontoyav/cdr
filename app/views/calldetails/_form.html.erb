@@ -11,55 +11,55 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :globalCallID_callId %><br>
-    <%= f.number_field :globalCallID_callId %>
+    <%= f.number_field :globalCallID_callId, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :cdrRecordType %><br>
-    <%= f.number_field :cdrRecordType %>
+    <%= f.number_field :cdrRecordType, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :origIpAddr %><br>
-    <%= f.number_field :origIpAddr %>
+    <%= f.number_field :origIpAddr, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :callingPartyNumber %><br>
-    <%= f.text_field :callingPartyNumber %>
+    <%= f.text_field :callingPartyNumber, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :destIpAddr %><br>
-    <%= f.number_field :destIpAddr %>
+    <%= f.number_field :destIpAddr, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :originalCalledPartyNumber %><br>
-    <%= f.text_field :originalCalledPartyNumber %>
+    <%= f.text_field :originalCalledPartyNumber, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :dateTimeConnect %><br>
-    <%= f.number_field :dateTimeConnect %>
+    <%= f.number_field :dateTimeConnect, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :dateTimeDisconnect %><br>
-    <%= f.number_field :dateTimeDisconnect %>
+    <%= f.number_field :dateTimeDisconnect, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :originalCalledPartyNumberPartition %><br>
-    <%= f.text_field :originalCalledPartyNumberPartition %>
+    <%= f.text_field :originalCalledPartyNumberPartition, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :duration %><br>
-    <%= f.number_field :duration %>
+    <%= f.number_field :duration, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :origDeviceName %><br>
-    <%= f.text_field :origDeviceName %>
+    <%= f.text_field :origDeviceName, class:"form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :destDeviceName %><br>
-    <%= f.text_field :destDeviceName %>
+    <%= f.text_field :destDeviceName, class:"form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class:"btn btn-success" %>
   </div>
 <% end %>
