@@ -1,4 +1,6 @@
 Cdr::Application.routes.draw do
+
+  devise_for :users
   resources :calldetails
 
   resources :departments
