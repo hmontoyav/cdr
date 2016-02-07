@@ -24,10 +24,28 @@
       <div id="page-content-wrapper">
         <!-- Keep all page content within the page-content inset div! -->
         <div class="page-content inset">
+        <div class="row">
+          <div class="col-md-12">
+<p class="navbar-text pull-right">
+
+<% if user_signed_in? %>
+  Conectado como 
+  <a href="#" class="navbar-link">Nombre Apellidos</a>
+  <%= link_to "Editar perfil", edit_user_registration_path %>
+   <%= link_to "logout", destroy_user_session_path, method: :delete %>
+<% else %>
+   <%= link_to "Registro", new_user_registration_path %>
+   <%= link_to "Login", new_user_session_path %>
+<% end %>
+</p>
+
+          </div>
+        </div>
          <div class="row">
            <div class="col-md-12">
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
+
               <%= yield %>
 
             </div>
